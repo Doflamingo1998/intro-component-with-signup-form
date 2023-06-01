@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+html {
+    font-family: "Poppins";
+    height: 100%;
+}
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: #ff7978;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vw;
+}
+
+.contain-1 {
+   flex: 1;
+   color: white;
+   margin-right: 5vw;
+}
+
+
+.contain-2 {
+    flex: 1;
+}
+
+.contain-2>h3 {
+    border-radius: 10px;
+    background:#5d54a3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+.contain-2>h3>span {
+    font-weight:lighter;
+}
+.contain-2>form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.contain-2>form>div {
+    width: 100%;
+
+}
+.contain-2>form>div>input {
+    width: -webkit-fill-available;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border-width: 1px;
+    outline: 0;
+    border-style: solid;
+}
+.contain-2>form>div.error-input>img {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 18px;
+    display: block;
+}
+.contain-2>form>div>button {
+    background-color: hsl(153.42deg 59.36% 50.78%);
+    border-color: hsl(153.42deg 59.36% 50.78%);
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.contain-2 .error {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: end;
+    font-size: 10px;
+    font-style: italic;
+    color: hsl(357.31deg 42.68% 69.22%);
+}
+
+
+.contain-2>form>div>button:hover {
+    opacity: 0.8;
+}
+
+.contain-2>form>p {
+    color: #c6c3d2;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 10px;
+}
+.contain-2>form>p>span {
+    color: #f48991;
+}
+
+.contain-2>form>div>img {
+    display: none;
+}
+
+.error-input {
+    position: relative;
+}
+
+.contain-2>form>div.error-input>input {
+    border-color: #ff7979;
+    border-width: 2px;
+}
+
+
+@media (max-width: 650px) {
+    body {
+        background-image: url(images/bg-intro-mobile.png);
+    }
+    .flex-container {
+        flex-direction: column;
+      }
+    .contain-1 {
+        text-align: center;
+        margin-right: 0;
+    }
+}
